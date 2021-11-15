@@ -5,7 +5,7 @@ export class userService {
     public async getAll(): Promise<Array<IUser>> {
         return await User.find({})
     }
-    public async getId(_id: number): Promise<IUser> {
-        return await User.findOne({ _id })
+    public async getId(id: number): Promise<IUser> {
+        return await User.findOne({ _id: id })
     }
 }
