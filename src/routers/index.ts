@@ -13,7 +13,7 @@ router.get('/users',cors(), async (_req: Request, res: Response) => {
 
 router.get('/users/:id',cors(),  async (_req: Request, res: Response) => {
     const controller = new UsersController()
-    const response = await controller.getUser(parseInt(_req.params.id))
+    const response = await controller.getUser(_req.params.id)
     return res.send(response)
 })
 

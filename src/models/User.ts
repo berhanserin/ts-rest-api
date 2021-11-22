@@ -9,8 +9,6 @@ const UserSchema = new Schema(
     { collection: 'User', timestamps: true }
 )
 
-interface UserBaseDocument extends IUser, Document {}
-
-const User: Model<UserBaseDocument> = model('User', UserSchema)
+const User: Model<IUser & Document> = model('User', UserSchema)
 
 export { User }

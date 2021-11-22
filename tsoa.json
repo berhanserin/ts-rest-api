@@ -1,8 +1,9 @@
 {
-  "entryFile": "src/index.ts",
-  "noImplicitAdditionalProperties": "throw-on-extras",
-  "spec": {
-    "outputDirectory": "public",
-    "specVersion": 3
-  }
+    "entryFile": "src/index.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "spec": {
+        "title": "Berhans",
+        "outputDirectory": "public",
+        "specVersion": 3
+    }
 }
