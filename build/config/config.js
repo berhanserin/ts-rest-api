@@ -12,7 +12,7 @@ switch (process.env.NODE_ENV) {
         path = __dirname + "\\dev.env";
         break;
     default:
-        path = __dirname + "\\.env";
+        path = __dirname + "\\server.env";
 }
 dotenv_1.default.config({ path: path });
 exports.PORT = process.env.PORT;
